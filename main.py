@@ -17,14 +17,14 @@ time.sleep(5)
 
 sign_in_field = driver.find_element_by_class_name("button")
 sign_in_field.click()
-time.sleep(10)
+time.sleep(5)
 
 facebook_login_field = driver.find_element_by_xpath(
     '//*[@id="t-531311883"]/div/div/div[1]/div/div[3]/span/div[2]/button'
 )
 
 facebook_login_field.click()
-time.sleep(10)
+time.sleep(5)
 
 # switch window to facebook login page
 base_window = driver.window_handles[0]
@@ -38,7 +38,7 @@ password.send_keys(PASSWORD)
 password.send_keys(Keys.ENTER)
 
 driver.switch_to.window(base_window)
-time.sleep(30)
+time.sleep(5)
 
 # allow location
 location_allow_field = driver.find_element_by_xpath('//*[@id="t-531311883"]/div/div/div/div/div[3]/button[1]')
@@ -54,7 +54,7 @@ time.sleep(5)
 cookie_accept_field = driver.find_element_by_xpath('//*[@id="t1197069193"]/div/div[2]/div/div/div[1]/button')
 cookie_accept_field.click()
 
-time.sleep(20)
+time.sleep(5)
 count = 0
 while count <= 100:
     time.sleep(5)
